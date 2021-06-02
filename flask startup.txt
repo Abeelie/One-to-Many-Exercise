@@ -1,0 +1,11 @@
+python -m venv venv
+venv\Scripts\activate
+pip3 install flask
+pip install flask-debugtoolbar
+pip3 freeze > requirements.txt
+
+set FLASK_ENV=development
+
+run test
+
+python3 -m unittest test.py
