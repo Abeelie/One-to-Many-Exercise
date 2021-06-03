@@ -9,3 +9,10 @@ set FLASK_ENV=development
 run test
 
 python3 -m unittest test.py
+
+
+
+pip install -r requirements.txt
+
+
+py -m pip uninstall

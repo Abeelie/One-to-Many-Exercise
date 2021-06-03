@@ -7,9 +7,13 @@
 </head>
 <body>
    <div class="container mt-5">
-  {% block content %}
-  <!-- put the content here -->
-  {% endblock %}
+   {% for msg in get_flashed_messages() %}
+   <div class="alert alert-info">{{ msg }}</div>
+   {% endfor %}
+
+   {% block content %}
+   <!-- put the content here -->
+   {% endblock %}
 </div>
 </body>
 </html>
